@@ -1,0 +1,33 @@
+// define=kodun her yerinden erişilebilirdir
+//undefine=erişimi kaldırır
+
+#include <stdio.h>
+#include <stdlib.h>
+#define buyukSayi 1000000
+
+int belirliİslemlerGerceklestir(int girdi){
+    return (girdi<buyukSayi);
+}
+int main() {
+    int ilkDegisken=20;
+    int ikinciDegisken=25;
+    int sonuc1,sonuc2,sonuc3;
+    const int baskaBuyukSayi=1000000;
+    
+    printf("Büyük Sayı: %d\n",buyukSayi);
+    
+    sonuc1=(ilkDegisken<buyukSayi);
+    printf("Sonuç 1: %d\n",sonuc1);
+    
+    sonuc2=(ikinciDegisken<buyukSayi);
+    printf("Sonuç 2: %d\n",sonuc2);
+    
+    #undef buyukSayi
+    #define buyukSayi 30000000
+    printf("Büyük Sayı: %d\n",buyukSayi);
+    
+    sonuc3=belirliİslemlerGerceklestir(30);
+    printf("Sonuç 3: %d\n",sonuc3);
+ 
+    return 0;
+}
