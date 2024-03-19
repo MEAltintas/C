@@ -1,4 +1,5 @@
-
+// define=kodun her yerinden erişilebilirdir
+//undefine=erişimi kaldır
 #include <stdio.h>
 #include <stdlib.h>
 #define buyukSayi 1000000
@@ -15,7 +16,10 @@ int main() {
     printf("Büyük Sayı: %d\n",buyukSayi);
     
     sonuc1=(ilkDegisken<buyukSayi);
-    printf("Sonuç 1: %d\n",sonuc2);
+    printf("Sonuç 1: %d\n",sonuc1);
+
+    sonuc2=(ilkDegisken<buyukSayi);
+    printf("Sonuç 2: %d\n",sonuc2);
     
     #undef buyukSayi
     #define buyukSayi 30000000
