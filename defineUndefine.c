@@ -18,7 +18,7 @@ int main() {
     sonuc1=(ilkDegisken<buyukSayi);
     printf("Sonuç 1: %d\n",sonuc1);
 
-    sonuc2=(ilkDegisken<buyukSayi);
+    sonuc2=(ikinciDegisken<buyukSayi);
     printf("Sonuç 2: %d\n",sonuc2);
     
     #undef buyukSayi
